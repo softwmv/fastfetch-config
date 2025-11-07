@@ -4,7 +4,7 @@ This repository contains a custom configuration for [FastFetch](https://github.c
 
 Credit to [XeroLinux](https://github.com/xerolinux/xero-layan-git) for the configuration layout.
 ## Config Preview
-<img width="970" height="626" alt="Image" src="https://github.com/user-attachments/assets/7922e7f8-a4dd-4ea8-b415-359a3b9215ca" />
+<img width="970" height="626" alt="Image" src="https://github.com/user-attachments/assets/93322731-c206-43f0-96be-47bac0d781a0" />
 
 ## Download
 Clone the repository with
