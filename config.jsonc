@@ -1,0 +1,153 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "display": {
+    "separator": " ",
+    "color": {
+      "keys": "35"
+    },
+    "key": {
+      "width": 4,
+      "type": "icon"
+    },
+    "bar": {
+      "char": {
+        "elapsed": "#",
+        "total": "-"
+      },
+      "border": null
+      // "width": 5
+    },
+    "percent": {
+      "type": ["num", "num-color", "bar", "bar-monochrome"]
+    }
+  },
+
+  "modules": [
+    {
+      "type": "os",
+      "key": "os",
+      "keyIcon": "",
+      "keyColor": "bright_blue",
+      "format": "{name}"
+    },
+    {
+      "type": "kernel",
+      "key": "kernel",
+      "keyIcon": "󰌽",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "packages",
+      "key": "packages",
+      "keyIcon": "󰏖",
+      "keyColor": "bright_blue"
+      
+    },
+    {
+      "type": "uptime",
+      "key": "uptime",
+      "keyIcon": "󰅐",
+      "keyColor": "bright_blue"
+    },
+
+    "break",
+    {
+      "type": "wifi",
+      "key": "wifi",
+      "keyIcon": "󰖩",
+      "keyColor": "bright_cyan",
+      "format": "{?ssid}{signal-quality-bar} [{signal-quality>12}] {ssid} ({band}g){?}{/ssid}{#red}{status}{#} ({inf-desc} {inf-status}){/}"
+    },
+    {
+      "type": "localip",
+      "key": "localip",
+      "keyIcon": "󰩟",
+      "keyColor": "bright_cyan",
+      "showPrefixLen": false
+    },
+    {
+      "type": "bluetooth",
+      "key": "bluetooth",
+      "keyColor": "bright_cyan"
+    },
+
+    "break",
+    {
+      "type": "cpu",
+      "key": "cpu",
+      "keyColor": "bright_yellow",
+      "temp": true,
+      "format": "{name} {temperature}"
+    },
+    {
+      "type": "gpu",
+      "key": "gpu",
+      "keyColor": "bright_yellow",
+      "temp": true,
+      "format": "{name} {temperature}"
+    },
+    {
+      "type": "memory",
+      "key": "memory",
+      "keyColor": "bright_yellow",
+      "format": "{percentage-bar} [{percentage>12}] {used} / {total}"
+    },
+    {
+      "type": "swap",
+      "key": "swap",
+      "keyColor": "bright_yellow",
+      "format": "{percentage-bar} [{percentage>12}] {used} / {total}"
+    },
+    {
+      "type": "disk",
+      "key": "disk",
+      "keyColor": "bright_yellow",
+      "hideFolders": "",
+      "format": "{size-percentage-bar} [{size-percentage>12}] {size-used} / {size-total} {mountpoint}"
+    },
+    {
+      "type": "battery",
+      "key": "battery",
+      "keyColor": "bright_yellow",
+      "temp": true,
+      "format": "{capacity-bar} [{capacity>12}] {status}"
+    },
+
+    "break",
+    {
+      "type": "title",
+      "key": "me",
+      "color": {
+        "user": "38;2;203;166;247",
+        "host": "38;2;180;190;254"
+      },
+      "format": "{user-name-colored} at {host-name-colored}"
+    },
+    {
+      "type": "lm",
+      "key": "lm",
+      "format": "{service}"
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "format": "{process-name} ({protocol-name})"
+    },
+    {
+      "type": "terminal",
+      "key": "terminal"
+    },
+    {
+      "type": "shell",
+      "key": "shell",
+      "keyIcon": "󰈺"
+    },
+    {
+      "type": "custom",
+      "key": "colors",
+      "keyIcon": "󰏘",
+      "format": "{#30}█{#90}█ {#31}█{#91}█ {#32}█{#92}█ {#33}█{#93}█ {#34}█{#94}█ {#35}█{#95}█ {#36}█{#96}█ {#37}█{#97}█"
+    }
+  ]
+}
