@@ -57,7 +57,7 @@
       "key": "wifi",
       "keyIcon": "󰖩",
       "keyColor": "bright_cyan",
-      "format": "{?ssid}{signal-quality-bar} [{signal-quality>12}] {ssid} ({band}g){?}{/ssid}{#red}{status}{#} ({inf-desc} {inf-status}){/}"
+      "format": "{?ssid}{signal-quality-bar} [ {signal-quality}] {ssid} ({band}g){?}{/ssid}{#red}{status}{#} ({inf-desc} {inf-status}){/}"
     },
     {
       "type": "localip",
@@ -91,27 +91,27 @@
       "type": "memory",
       "key": "memory",
       "keyColor": "bright_yellow",
-      "format": "{percentage-bar} [{percentage>12}] {used} / {total}"
+      "format": "{percentage-bar} [ {percentage}] {used} / {total}"
     },
     {
       "type": "swap",
       "key": "swap",
       "keyColor": "bright_yellow",
-      "format": "{percentage-bar} [{percentage>12}] {used} / {total}"
+      "format": "{percentage-bar} [ {percentage}] {used} / {total}"
     },
     {
       "type": "disk",
       "key": "disk",
       "keyColor": "bright_yellow",
       "hideFolders": "",
-      "format": "{size-percentage-bar} [{size-percentage>12}] {size-used} / {size-total} {mountpoint}"
+      "format": "{size-percentage-bar} [ {size-percentage}] {size-used} / {size-total} {mountpoint}"
     },
     {
       "type": "battery",
       "key": "battery",
       "keyColor": "bright_yellow",
       "temp": true,
-      "format": "{capacity-bar} [{capacity>12}] {status}"
+      "format": "{capacity-bar} [ {capacity}] {status}"
     },
 
     "break",
